@@ -379,6 +379,13 @@ footer p {
   footer h1{
     font-size: 20px;
   }
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    margin: auto;
+    gap: 44px;
+  }
 }
 
 @media screen and (min-width: 560px) and (max-width: 960px) {
