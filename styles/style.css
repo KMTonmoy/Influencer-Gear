@@ -13,7 +13,7 @@ header {
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  text-align: center;
 }
 .nav-logo {
   color: #3a3a3a;
@@ -22,8 +22,7 @@ nav {
 }
 .nav-links {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-right: 20px;
 }
 .nav-link > a {
   margin-right: 30px;
@@ -31,8 +30,40 @@ nav {
   font-size: 16px;
   font-weight: 600;
 }
-.fa-magnifying-glass,
-.fa-cart-shopping {
+.fa-magnifying-glass,.fa-cart-shopping {
   font-size: 24px;
   color: #000000;
+}
+
+
+
+
+@media screen and (max-width: 560px) {
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        padding: 0px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .nav-links{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-link > a {
+        margin-right: 20px;
+        color: #3a3a3a;
+        font-size: 12px;
+        font-weight: 600;
+      } 
+      .fa-magnifying-glass,.fa-cart-shopping {
+        font-size: 12px;
+        color: #000000;
+        margin: 0;
+      }
+
 }
