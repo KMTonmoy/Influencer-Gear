@@ -30,40 +30,114 @@ nav {
   font-size: 16px;
   font-weight: 600;
 }
-.fa-magnifying-glass,.fa-cart-shopping {
+.fa-magnifying-glass,
+.fa-cart-shopping {
   font-size: 24px;
   color: #000000;
 }
 
+.banner {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
 
+.banner-info {
+  width: 50%;
+}
+.banner-img {
+  width: 50%;
+  background-image: url("../assets/Circle design.svg");
+  background-repeat: no-repeat;
+  height: 500px;
+}
 
+.banner-title {
+  color: #3a3a3a;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 70px;
+}
+.banner-disc {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.btn-primary {
+  padding: 10px 24px;
+  gap: 8px;
+  border-radius: 41px;
+  background: #e02c6d;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
 
 @media screen and (max-width: 560px) {
-    body{
-        overflow-x: hidden;
-    }
-    header{
-        padding: 0px;
-    }
-    nav{
-        flex-direction: column;
-    }
-    .nav-links{
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .nav-link > a {
-        margin-right: 20px;
-        color: #3a3a3a;
-        font-size: 12px;
-        font-weight: 600;
-      } 
-      .fa-magnifying-glass,.fa-cart-shopping {
-        font-size: 12px;
-        color: #000000;
-        margin: 0;
-      }
+  body {
+    overflow-x: hidden;
+  }
+  header {
+    padding: 0px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .nav-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-link > a {
+    margin-right: 20px;
+    color: #3a3a3a;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .fa-magnifying-glass,
+  .fa-cart-shopping {
+    font-size: 12px;
+    color: #000000;
+    margin: 0;
+  }
 
+  .banner {
+    flex-direction: column-reverse;
+    margin: 100px auto;
+    align-items: center;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .banner-info {
+    width: 100%;
+  }
+  .banner-img {
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+  }
+  .cameremain {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .banner-title {
+    color: #3a3a3a;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .banner-disc {
+    color: #3a3a3a;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
 }
