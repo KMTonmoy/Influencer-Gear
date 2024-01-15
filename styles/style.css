@@ -386,6 +386,9 @@ footer p {
     margin: auto;
     gap: 44px;
   }
+  body{
+    overflow-x: hidden;
+  }
 }
 
 @media screen and (min-width: 560px) and (max-width: 960px) {
